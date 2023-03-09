@@ -18,4 +18,11 @@ export class EmpleadoComponent {
     return this.antiguedad;
   }
   // modificaEmpresa(value:String) {}
+
+  propertyDisabled = false;
+  userRegistrado = false;
+
+  getRegistroUsuario() {
+    this.userRegistrado = true;
+  }
 }

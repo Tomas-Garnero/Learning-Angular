@@ -4,7 +4,20 @@
 <p>Empresa del empleado: {{empresa.value}}</p>
 <p>Antiguedad del empleado: {{getAntiguedad()}}</p>
 
-Introduce la empresa: <input type="text" placeholder="Nombre de la empresa" #empresa (keyup)="0"/>
+Introduce la empresa: 
+<input 
+    type="text" 
+    placeholder="Nombre de la empresa" 
+    #empresa 
+    (keyup)="0"
+    [disabled] = "propertyDisabled"
+/>
 <br/>
 <br/>
 <!-- <input type="button" value="Modificar" (click)="modificaEmpresa(empresa.value)"/> -->
+<br/>
+<br/>
+
+Registrado: <input type="checkbox" id="registro" [checked]="userRegistrado" />
+
+{{getRegistroUsuario()}}
