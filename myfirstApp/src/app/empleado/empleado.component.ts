@@ -11,10 +11,11 @@ export class EmpleadoComponent {
   nombre = "Tomas";
   apellido = "Garnero";
   edad = 25;
-  empresa = "Aprendiendo Angular";
+  // empresa = "Aprendiendo Angular";
   private antiguedad = 5;
 
   getAntiguedad() {
     return this.antiguedad;
   }
+  // modificaEmpresa(value:String) {}
 }
