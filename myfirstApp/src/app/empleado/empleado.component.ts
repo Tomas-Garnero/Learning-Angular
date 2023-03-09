@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   // styles: ["p {background-color: red}"]
 })
 export class EmpleadoComponent {
+  nombre = "Tomas";
+  apellido = "Garnero";
+  edad = 25;
+  empresa = "Aprendiendo Angular";
+  private antiguedad = 5;
 
+  getAntiguedad() {
+    return this.antiguedad;
+  }
 }
