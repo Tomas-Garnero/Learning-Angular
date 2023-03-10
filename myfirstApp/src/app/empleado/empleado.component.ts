@@ -23,6 +23,20 @@ export class EmpleadoComponent {
   userRegistrado = false;
 
   getRegistroUsuario() {
-    this.userRegistrado = true;
+    this.userRegistrado = false;
   }
+
+  setUsuarioRegistrado(e: Event) {
+    // alert("El usuario se registro correctamente");
+    // this.textoDeRegistro = "El usuario se Registro correctamente";
+    if((<HTMLInputElement>e.target).value == "si") {
+      this.textoDeRegistro = "El usuario se Registro correctamente";
+    } else {
+      this.textoDeRegistro = "No hay nadie registrado";
+    }
+  }
+
+  textoDeRegistro = "No hay nadie registrado";
+
+
 }

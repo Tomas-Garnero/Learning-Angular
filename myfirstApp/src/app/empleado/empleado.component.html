@@ -18,6 +18,16 @@ Introduce la empresa:
 <br/>
 <br/>
 
-Registrado: <input type="checkbox" id="registro" [checked]="userRegistrado" />
+{{textoDeRegistro}}
+<br/>
+
+<!-- Registrado: <input type="checkbox" id="registro" [checked]="userRegistrado" (click)="setUsuarioRegistrado()"/> -->
 
 {{getRegistroUsuario()}}
+
+<br/>
+<br/>
+
+Registrado: <input type="radio" value="si" name="nRegistro" id="registro" [checked]="userRegistrado" (click)="setUsuarioRegistrado($event)"/>
+<br/>
+No registrado: <input type="radio" value="no" name="nRegistro" (click)="setUsuarioRegistrado($event)"/>
