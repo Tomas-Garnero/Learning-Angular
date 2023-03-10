@@ -1,17 +1,21 @@
 <p>Nombre del empleado: {{nombre}}</p>
 <p>Apellido del empleado: {{apellido}}</p>
 <p>Edad del empleado: {{edad > 18 ? "Es mayor de edad" : "Es menor de edad"}}</p>
-<p>Empresa del empleado: {{empresa.value}}</p>
+<!-- <p>Empresa del empleado: {{empresa.value}}</p> -->
+<p>Empresa del empleado: {{empresa}}</p>
 <p>Antiguedad del empleado: {{getAntiguedad()}}</p>
 
-Introduce la empresa: 
+<!-- Introduce la empresa: 
 <input 
     type="text" 
     placeholder="Nombre de la empresa" 
     #empresa 
     (keyup)="0"
     [disabled] = "propertyDisabled"
-/>
+/> -->
+
+Introduce la empresa: <input type="text" [(ngModel)]="empresa"/>
+
 <br/>
 <br/>
 <!-- <input type="button" value="Modificar" (click)="modificaEmpresa(empresa.value)"/> -->

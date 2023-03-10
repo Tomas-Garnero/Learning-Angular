@@ -11,8 +11,10 @@ export class EmpleadoComponent {
   nombre = "Tomas";
   apellido = "Garnero";
   edad = 25;
-  // empresa = "Aprendiendo Angular";
+  empresa = "Google";
   private antiguedad = 5;
+
+  
 
   getAntiguedad() {
     return this.antiguedad;
@@ -21,6 +23,7 @@ export class EmpleadoComponent {
 
   propertyDisabled = false;
   userRegistrado = false;
+  textoDeRegistro = "No hay nadie registrado";
 
   getRegistroUsuario() {
     this.userRegistrado = false;
@@ -35,8 +38,4 @@ export class EmpleadoComponent {
       this.textoDeRegistro = "No hay nadie registrado";
     }
   }
-
-  textoDeRegistro = "No hay nadie registrado";
-
-
 }
